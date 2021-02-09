@@ -43,7 +43,7 @@
         {{ .ctx.Summary }}
 
         {{ if .ctx.Truncated }}
-            <a href="{{ .ctx.Permalink }}" class="more">{{ i18n "continueReading" }}</a>
+            <a href="{{ .ctx.Permalink }}" class="more">{{ i18n "continueReading" }}...</a>
         {{ end }}
     {{ end }}
 </div>
