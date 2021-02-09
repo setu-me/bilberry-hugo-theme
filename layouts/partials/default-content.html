@@ -22,17 +22,6 @@
             {{ end }}
         {{ end }}
 
-        {{ with .ctx.Params.categories }}
-            <span class="categories">
-                {{ range . }}
-                    {{ $urlValue := replace . " " "-" | lower}}
-                    {{ with $.ctx.Site.GetPage (printf "/categories/%s" $urlValue) }}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{ end }}
-                {{ end }}
-            </span>
-        {{ end }}
-
         {{ with .ctx.Params.author }}
             <span class="author">
                 {{ $urlValue := replace . " " "-" | lower}}
