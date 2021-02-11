@@ -8,4 +8,5 @@ tags: []
 
 # Set your external url
 link: "https://github.com/Lednerb/bilberry-hugo-theme"
+icon: fa-link
 ---
